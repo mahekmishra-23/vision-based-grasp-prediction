@@ -1,0 +1,10 @@
+{
+  "device": "cuda",
+  "torch": "2.14.0+cu130",
+  "train_scenes": 6384,
+  "validation_scenes": 583,
+  "test_scenes": 593,
+  "seed": 42,
+  "epochs": 12,
+  "augmentation": "horizontal and vertical flips on training scenes only"
+}

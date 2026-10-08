@@ -1,0 +1,22 @@
+{
+  "geometry": {
+    "match_fraction": 0.4924114671163575,
+    "mean_iou": 0.37184409286863646,
+    "mean_angle_error_deg": 37.32289192967918
+  },
+  "learned": {
+    "match_fraction": 0.8785834738617201,
+    "mean_iou": 0.5716757416085771,
+    "mean_angle_error_deg": 11.268911027987162
+  },
+  "hybrid": {
+    "match_fraction": 0.8718381112984823,
+    "mean_iou": 0.5685410752256814,
+    "mean_angle_error_deg": 11.660834709607364
+  },
+  "robust": {
+    "match_fraction": 0.8735244519392917,
+    "mean_iou": 0.5682756013773967,
+    "mean_angle_error_deg": 11.79301015635419
+  }
+}

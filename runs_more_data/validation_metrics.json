@@ -1,0 +1,31 @@
+{
+  "split": "val",
+  "scenes": 583,
+  "checkpoint": "C:\\Users\\krish\\Documents\\Codex\\2026-09-28\\o\\outputs\\grasp_project_simple\\runs_more_data\\best.pt",
+  "methods": {
+    "geometry": {
+      "matched": 273,
+      "match_fraction": 0.46826758147512865,
+      "mean_iou": 0.3582998113281666,
+      "mean_angle_error_deg": 37.411318257177484
+    },
+    "learned": {
+      "matched": 510,
+      "match_fraction": 0.8747855917667239,
+      "mean_iou": 0.571714983231949,
+      "mean_angle_error_deg": 13.23870724984744
+    },
+    "hybrid": {
+      "matched": 505,
+      "match_fraction": 0.8662092624356775,
+      "mean_iou": 0.5725133174674925,
+      "mean_angle_error_deg": 13.282410213529948
+    },
+    "robust": {
+      "matched": 504,
+      "match_fraction": 0.8644939965694682,
+      "mean_iou": 0.5738861603988074,
+      "mean_angle_error_deg": 13.351225611494671
+    }
+  }
+}
