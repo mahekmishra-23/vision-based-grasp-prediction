@@ -1,7 +1,7 @@
 """Run locally after training: python webcam.py runs_subset_gpu/best.pt"""
 
 import argparse
-
+from pathlib import Path
 import cv2
 import numpy as np
 
@@ -33,7 +33,14 @@ def main():
     parser.add_argument("--camera", type=int, default=0)
     args = parser.parse_args()
 
-    model, size, device = load_checkpoint(args.checkpoint)
+    checkpoint = Path(args.checkpoint)
+    if not checkpoint.is_file():
+        parser.error(
+            f"Checkpoint not found: {checkpoint}. "
+            "Use runs_more_data/best.pt or provide a valid checkpoint path."
+        )
+
+    model, size, device = load_checkpoint(checkpoint)
     camera = cv2.VideoCapture(args.camera)
     if not camera.isOpened():
         raise RuntimeError("Could not open the webcam")
